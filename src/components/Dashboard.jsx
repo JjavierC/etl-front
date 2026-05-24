@@ -24,7 +24,7 @@ export default function Dashboard({ usuario, onLogout, usuariosDB, setUsuariosDB
   useEffect(() => {
     if (vista !== 'metricas') return; 
 
-    fetch('http://localhost:8000/api/ventas')
+    fetch('https://tu-api.onrender.com/api/ventas')
       .then(res => {
         if (!res.ok) throw new Error('Error al conectar con la API');
         return res.json();
@@ -150,7 +150,7 @@ export default function Dashboard({ usuario, onLogout, usuariosDB, setUsuariosDB
     formData.append('sede', usuario.sedeAsignada); 
 
     try {
-      const response = await fetch('http://localhost:8000/api/subir-csv', { method: 'POST', body: formData });
+      const response = await fetch('https://tu-api.onrender.com/api/subir-csv', { method: 'POST', body: formData });
       if (response.ok) {
         const data = await response.json();
         setMensajeUpload({ tipo: 'exito', texto: data.mensaje || '¡Reporte recibido en la cola principal!' });
