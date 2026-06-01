@@ -1,16 +1,15 @@
-# React + Vite
+# Dashboard de Ventas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositorio contiene la interfaz de usuario del sistema de gestion de ventas. Es una aplicacion web de una sola pagina (SPA) que permite a los usuarios visualizar los datos procesados por el motor ETL de forma grafica y amigable.
 
-Currently, two official plugins are available:
+## Caracteristicas Principales
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Visualizacion Dinamica: Solicita los datos a la API central y los dibuja en la pantalla en tiempo real.
+* Interfaz Adaptable: Diseño preparado para ajustarse a diferentes tamaños de pantalla.
+* Conexion Segura: Integracion directa con el backend alojado en Render para mantener los datos de la base de datos protegidos.
 
-## React Compiler
+## Tecnologias Utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* Libreria Principal: React
+* Herramienta de Construccion: Vite
+* Despliegue: Azure Static Web Apps
